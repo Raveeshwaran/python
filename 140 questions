@@ -1,0 +1,301 @@
+print("Hello Python")
+a,b=map(float,input().split());print(a+b,a/b if b!=0 else "Error")
+b,h=map(float,input().split());print(0.5*b*h)
+a,b=input(),input();a,b=b,a;print(a,b)
+import random;print(random.randint(1,100))
+print(float(input())*0.621371)
+print((float(input())*9/5)+32)
+import calendar;print(calendar.month(int(input()),int(input())))
+import cmath;a,b,c=map(float,input().split());d=cmath.sqrt(b**2-4*a*c);print((-b+d)/(2*a),(-b-d)/(2*a))
+a,b=map(int,input().split());a,b=b,a;print(a,b)
+n=float(input());print("Positive" if n>0 else "Zero" if n==0 else "Negative")
+n=int(input());print("Even" if n%2==0 else "Odd")
+y=int(input());print("Leap" if (y%400==0 or (y%4==0 and y%100!=0)) else "Not Leap")
+n=int(input());print("Prime" if n>1 and all(n%i for i in range(2,n)) else "Not Prime")
+print([n for n in range(int(input()),int(input())+1) if n>1 and all(n%i for i in range(2,n))])
+import math;print(math.factorial(int(input())))
+n=int(input());[print(n,"x",i,"=",n*i) for i in range(1,11)]
+a,b=0,1;[print(a:=b,a:=a+b) for _ in range(int(input())-1)]
+n=int(input());print("Armstrong" if sum(int(d)**len(str(n)) for d in str(n))==n else "Not")
+print([x for x in range(int(input()),int(input())+1) if sum(int(d)**len(str(x)) for d in str(x))==x])
+n=int(input());print(n*(n+1)//2)
+import math;a,b=map(int,input().split());print(abs(a*b)//math.gcd(a,b))
+import math;a,b=map(int,input().split());print(math.gcd(a,b))
+n=int(input());print(bin(n),oct(n),hex(n))
+print(ord(input()))
+a,b=map(float,input().split());print(a+b,a-b,a*b,a/b)
+def f(n):return n if n<2 else f(n-1)+f(n-2);[print(f(i)) for i in range(int(input()))]
+def f(n):return 1 if n==0 else n*f(n-1);print(f(int(input())))
+w,h=map(float,input().split());print(w/(h*h))
+import math;print(math.log(float(input())))
+print(int(input())**int(input()))
+print(input()[::-1])
+s=input();print("Palindrome" if s==s[::-1] else "Not")
+print(sum(map(int,str(input()))))
+a,b,c=map(int,input().split());print(max(a,b,c))
+a,b,c=map(int,input().split());print(min(a,b,c))
+print(input().swapcase())
+print(sum(c.lower() in 'aeiou' for c in input()))
+s=input().lower();print(sum(c.isalpha() and c not in 'aeiou' for c in s))
+print(len(input()))
+print(' '.join(input().split()[::-1]))
+print(input().replace(" ",""))
+a,b=input(),input();print("Anagram" if sorted(a)==sorted(b) else "Not")
+s=input();print({c:s.count(c) for c in set(s)})
+s=input();old,new=input(),input();print(s.replace(old,new))
+s=input();print(s.upper())
+s=input();print(s.lower())
+s=input();print(s.title())
+s=input();print(s[::-1])
+s=input();print("Digits" if s.isdigit() else "Alpha" if s.isalpha() else "Alphanumeric" if s.isalnum() else "Other")
+s=input();print(s.capitalize())
+s=input();print(s.startswith("a"))
+s=input();print(s.endswith("z"))
+s=input();print(s.isupper())
+s=input();print(s.islower())
+s=input();print(s.isalpha())
+s=input();print(s.isdigit())
+s=input();print(s.isalnum())
+s=input();print(s.count("a"))
+s=input();print(s.find("a"))
+s=input();print(s.replace("a","@"))
+s=input();print(" ".join(sorted(s)))
+s=input();print(" ".join(sorted(s,reverse=True)))
+s=input();print("Unique" if len(set(s))==len(s) else "Not Unique")
+s=input();print("All same" if all(c==s[0] for c in s) else "Not same")
+s=input();print(s.isnumeric())
+s=input();print(s.isdecimal())
+s=input();print(s.isspace())
+s=input();print(s.isidentifier())
+s=input();print(s.isprintable())
+s=input();print(s.zfill(10))
+s=input();print(s.ljust(10,"*"))
+s=input();print(s.rjust(10,"*"))
+s=input();print(s.center(10,"*"))
+s=input();print(s.strip())
+s=input();print(s.lstrip())
+s=input();print(s.rstrip())
+s=input();print(s.split())
+s=input();print("-".join(s.split()))
+s=input();print(list(s))
+s=input();print(s.swapcase())
+s=input();print(s.capitalize())
+s=input();print(s.title())
+s=input();print(s.upper())
+s=input();print(s.lower())
+s=input();print(s.isalpha())
+s=input();print(s.isdigit())
+s=input();print(s.isalnum())
+s=input();print(s.isnumeric())
+s=input();print(s.isdecimal())
+s=input();print(s.isspace())
+s=input();print(s.isidentifier())
+s=input();print(s.isprintable())
+s=input();print(len(s))
+s=input();print("Palindrome" if s==s[::-1] else "Not")
+s=input();print(s.isascii())
+s=input();print(s.islower())
+s=input();print(s.isupper())
+s=input();print(s.istitle())
+s=input();print(s.isidentifier())
+s=input();print(s.isprintable())
+s=input();print(s.isspace())
+s=input();print(s.isnumeric())
+s=input();print(s.isdecimal())
+s=input();print(s.isalnum())
+s=input();print(s.isalpha())
+s=input();print(s.isdigit())
+s=input();print(s.zfill(5))
+s=input();print(s.ljust(10,"-"))
+s=input();print(s.rjust(10,"-"))
+s=input();print(s.center(10,"-"))
+s=input();print(s.strip())
+s=input();print(s.lstrip())
+s=input();print(s.rstrip())
+s=input();print(s.split())
+s=input();print("-".join(s.split()))
+s=input();print(list(s))
+s=input();print(set(s))
+s=input();print(len(set(s)))
+s=input();print("Unique" if len(set(s))==len(s) else "Not Unique")
+s=input();print("All same" if all(c==s[0] for c in s) else "Not same")
+s=input();print("Palindrome" if s==s[::-1] else "Not")
+s=input();print("Anagram" if sorted(s)==sorted(input()) else "Not")
+s=input();print({c:s.count(c) for c in set(s)})
+s=input();print(s.upper())
+s=input();print(s.lower())
+s=input();print(s.title())
+s=input();print(s.capitalize())
+s=input();print(s.swapcase())
+s=input();print(s[::-1])
+s=input();print("Palindrome" if s==s[::-1] else "Not")
+s=input();print("Anagram" if sorted(s)==sorted(input()) else "Not")
+s=input();print({c:s.count(c) for c in set(s)})
+s=input();print(sum(c.lower() in 'aeiou' for c in s))
+s=input();print(sum(c.isalpha() and c not in 'aeiou' for c in s))
+s=input();print(len(s))
+s=input();print("Unique" if len(set(s))==len(s) else "Not Unique")
+s=input();print("All same" if all(c==s[0] for c in s) else "Not same")
+s=input();print("Digits" if s.isdigit() else "Alpha" if s.isalpha() else "Alphanumeric" if s.isalnum() else "Other")
+s=input();print(s.upper())
+s=input();print(s.lower())
+s=input();print(s.title())
+s=input();print(s.capitalize())
+s=input();print(s.swapcase())
+s=input();print(s[::-1])
+s=input();print("Palindrome" if s==s[::-1] else "Not")
+a,b=input(),input();print("Anagram" if sorted(a)==sorted(b) else "Not")
+s=input();print({c:s.count(c) for c in set(s)})
+s=input();print(sum(c.lower() in 'aeiou' for c in s))
+s=input();print(sum(c.isalpha() and c not in 'aeiou' for c in s))
+s=input();print(len(s))
+s=input();print("Unique" if len(set(s))==len(s) else "Not Unique")
+s=input();print("All same" if all(c==s[0] for c in s) else "Not same")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
