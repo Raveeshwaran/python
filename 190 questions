@@ -1,0 +1,170 @@
+print("Python is a high-level programming language")
+print(["Object-Oriented","High-Level","Interpreted","Dynamic"])
+import sys;print(sys.path)
+import os;print(os.environ.get("PYTHONSTARTUP"))
+print("Keywords are case-sensitive normally")
+print([type(10),type(10.5),type("Hello")])
+
+s="Hello World!"
+print(s);print(s[0]);print(s[2:5]);print(s[2:]);print(s*2);print(s+"TEST")
+
+lst=['abcd',786,2.23,'john',70.2]
+print(lst);print(lst[0]);print(lst[1:3]);print(lst[2:])
+tinylist=[123,'john'];print(tinylist*2)
+list1=['abcd',786,2.23,'john',70.2];list2=[123,'john'];print(list1+list2)
+
+tup=('abcd',786,2.23,'john',70.2)
+print(tup);print(tup[0]);print(tup[1:3]);print(tup[2:])
+
+d={'Name':'John','Age':31,'Country':'USA'}
+print(d);print(d.keys());print(d.values())
+
+print(int("123"));print(float("12.3"));print(str(123))
+import re;print(re.compile(str(123)))
+print(eval("{'a':1,'b':2}"))
+print(tuple("abc"));print(list("abc"))
+
+import random
+print(random.choice([1,2,3]));print(random.randint(1,10));print(random.randint(1,100))
+random.seed(10);print(random.randint(1,100))
+lst=[1,2,3];random.shuffle(lst);print(lst)
+
+print("hello".capitalize());print("abc123".isalnum());print("123".isdigit());print("abc".islower())
+print("   ".isspace());print("Hello World".istitle());print("HELLO".isupper())
+print("".join(["a","b","c"]));print(len("Hello"))
+print("Hi".ljust(10));print("Hi".lower());print("   hi".lstrip())
+print(max("abcxyz"));print(min("abcxyz"))
+print("hello world".replace("world","python"));print("   hi   ".strip())
+print("123".isdecimal())
+
+lst=[1,2,3,4];del lst[2];print(lst)
+print([1,2,3]+[4,5,6])
+lst=[1,2,3];lst.insert(1,99);print(lst)
+lst=[1,2,3];lst.pop();print(lst)
+lst=[1,2,3];lst.remove(2);print(lst)
+lst=[1,2,3];lst.reverse();print(lst)
+lst=[3,1,2];lst.sort();print(lst)
+
+f=lambda x:x+1;print(f(5))
+f=lambda x:x*2;print(f(3))
+
+def f():pass
+print("Stack memory used")
+
+print(["Web Development","Machine Learning","Data Science","Game Development"])
+print("Python 2 vs 3 differ in syntax, performance, libraries")
+print("Jython runs on Java platform")
+print(os.name);print("Block begins when indented")
+print("scikit-learn")
+print([list,tuple,dict,set])
+print(["Object-Oriented","High-Level","Interpreted","Portable"])
+print("Strings immutable, create new");print("Python is easy to learn")
+print((lambda x:x+1)(5))
+print("Tuple for ordered unchangeable, List for ordered changeable, Dict for unordered changeable")
+
+x=10;print("Local vs Global rules")
+
+try:print(1/0)
+except:print("Error handled")
+
+f=open("test.txt","w");f.write("Hello");f.close()
+f=open("test.txt");print(f.read())
+
+class A: pass
+print(A())
+
+class B: pass
+class C(B): pass
+print(C())
+
+class A: pass
+class B(A): pass
+print(B())
+
+class A: pass
+print(isinstance(A(),A))
+
+it=iter([1,2,3]);print(next(it))
+
+def gen():
+    yield 1;yield 2
+print(list(gen()))
+
+def dec(f):
+    def wrapper():
+        print("Hi")
+        f()
+    return wrapper
+
+@dec
+def f():
+    print("Bye")
+f()
+
+with open("test.txt") as f:
+    print(f.read())
+
+import math;print(math.pi)
+print(random.randint(1,10))
+import datetime;print(datetime.date.today())
+import collections;print(collections.Counter("aabb"))
+import itertools;print(list(itertools.permutations([1,2])))
+import functools;print(functools.reduce(lambda x,y:x+y,[1,2,3]))
+print(re.findall(r"\d","abc123"))
+import json;print(json.dumps({"a":1}))
+import pickle;print(pickle.dumps([1,2]))
+import sqlite3;print(sqlite3.connect(":memory:"))
+
+print("HTTP requests");print("BeautifulSoup parsing")
+
+import pandas as pd;print(pd.DataFrame({"a":[1,2]}))
+import numpy as np;print(np.array([1,2,3]))
+import matplotlib.pyplot as plt;plt.plot([1,2,3]);plt.show()
+
+print("scikit-learn ML");print("tensorflow ML");print("keras ML")
+print("flask web");print("django web");print("fastapi web")
+print("pyramid web");print("bottle web")
+print("Tkinter GUI");print("pygame game")
+
+import threading;print(threading.active_count())
+import multiprocessing;print(multiprocessing.cpu_count())
+import asyncio;print(asyncio.run(asyncio.sleep(0)))
+import socket;print(socket.gethostname())
+
+import csv;print("csv module")
+import statistics;print(statistics.mean([1,2,3]))
+import decimal;print(decimal.Decimal("1.1"))
+import fractions;print(fractions.Fraction(1,3))
+import heapq;print(heapq.nlargest(2,[1,2,3]))
+import bisect;print(bisect.bisect([1,2,3],2))
+import logging;logging.warning("warn")
+import unittest;print(unittest.TestCase)
+print("pytest")
+import argparse;print("argparse")
+import configparser;print("configparser")
+import shutil;print("shutil")
+import glob;print(glob.glob("*"))
+import pathlib;print(pathlib.Path("."))
+
+import zipfile;print("zipfile")
+import tarfile;print("tarfile")
+import gzip;print("gzip")
+import bz2;print("bz2")
+import lzma;print("lzma")
+import hashlib;print(hashlib.md5(b"hi").hexdigest())
+import secrets;print(secrets.token_hex(8))
+import uuid;print(uuid.uuid4())
+import base64;print(base64.b64encode(b"hi"))
+
+import sys;print(sys.version)
+import platform;print(platform.system())
+
+import subprocess
+subprocess.run("echo hi", shell=True)
+
+import time;print(time.time())
+import calendar;print(calendar.month(2026,6))
+import locale;print(locale.getdefaultlocale())
+import ctypes;print(ctypes.c_int(5))
+
+print("venv");print("virtualenv");print("pip");print("setuptools");print("wheel");print("poetry");print("conda")
